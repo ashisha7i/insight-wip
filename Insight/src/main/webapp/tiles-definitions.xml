@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+ 
+<tiles-definitions>
+ 
+	<definition name="app.homepage" template="/jsp/layouts/default.jsp">
+		<put-attribute name="title" value="Home Page" />
+		<put-attribute name="header" value="/jsp/common/header.jsp" />
+		<put-attribute name="menu" value="/jsp/common/menu.jsp" />
+		<put-attribute name="submenu" value="/jsp/common/submenu.jsp" />
+		<put-attribute name="content" value="/jsp/home/home.jsp" />
+		<put-attribute name="footer" value="/jsp/common/footer.jsp" />
+	</definition>
+	
+	<definition name="login" extends="app.homepage">
+		<put-attribute name="title" value="Login" />
+		<put-attribute name="content" value="/jsp/home/loginPage.jsp" />
+	</definition>
+	
+	<definition name="userInfo" extends="app.homepage">
+		<put-attribute name="title" value="User Info" />
+		<put-attribute name="content" value="/jsp/demo/userInfo.jsp" />
+	</definition>
+	
+	<definition name="contact.us" extends="app.homepage">
+		<put-attribute name="title" value="Contact Us" />
+		<put-attribute name="content" value="/jsp/contact/contactus.jsp" />
+	</definition>
+	
+	<definition name="adminPage" extends="app.homepage">
+		<put-attribute name="title" value="Administration" />
+		<put-attribute name="content" value="/jsp/home/admin.jsp" />
+	</definition>
+	
+	<definition name="403Page" extends="app.homepage">
+		<put-attribute name="title" value="Access Error" />
+		<put-attribute name="content" value="/jsp/error/403Page.jsp" />
+	</definition>
+
+	<definition name="contactSysAdmin" extends="app.homepage">
+		<put-attribute name="title" value="System Assistance" />
+		<put-attribute name="content" value="/jsp/contact/contactAdmin.jsp" />
+	</definition>
+ 	
+ 	<definition name="createUser" extends="app.homepage">
+		<put-attribute name="title" value="Create User" />
+		<put-attribute name="content" value="/jsp/create/createUser.jsp" />
+	</definition>
+	
+	<definition name="createStudent" extends="app.homepage">
+		<put-attribute name="title" value="Create Student" />
+		<put-attribute name="content" value="/jsp/create/createStudent.jsp" />
+	</definition>
+	
+	<definition name="createClass" extends="app.homepage">
+		<put-attribute name="title" value="Create Class/Grade" />
+		<put-attribute name="content" value="/jsp/create/createClass.jsp" />
+	</definition>
+ 	
+ 	<definition name="reports" extends="app.homepage">
+		<put-attribute name="title" value="Reports" />
+		<put-attribute name="content" value="/jsp/reports/reports.jsp" />
+	</definition>
+	
+	<definition name="gradesandattendance" extends="app.homepage">
+		<put-attribute name="title" value="Manage Grades and Attendance" />
+		<put-attribute name="content" value="/jsp/manage/manageGradesAndAttendance.jsp" />
+	</definition>
+ 	
+</tiles-definitions>

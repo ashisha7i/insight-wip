@@ -1,0 +1,149 @@
+* {
+	font-family: 'Roboto', sans-serif;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	margin-top: 0px;
+	background: url("../img/site-bg.jpg"); 
+	/* background-color: #16958c;	 */
+	background-repeat: repeat;
+	min-height: 100%;
+}
+
+.main-container {
+	display: grid;
+	grid-template-columns: auto 1220px auto;
+	grid-template-rows: 100px 50px auto 35px;
+	min-height: 100%;
+}
+
+.main-container > div {
+	padding: 5px;
+	/* border-left: 2px solid gainsboro;
+	border-right: 2px solid gainsboro; */
+}
+
+.container {
+	display: grid;
+	background-color: #ffffff;
+	
+}
+
+.div-menu {
+	grid-column-start: 2;
+	grid-column-end: 3;
+	background-color: #ffffff;
+	border-bottom: 2px solid red;
+}
+
+.div-content {
+	grid-column-start:2;
+	grid-column-end:3;
+	background-color: #ffffff;
+	min-height: 100%;
+	border-top: 2px solid gainsboro;
+	/* border-bottom: 5px solid gainsboro; */
+	overflow: auto;
+}
+
+.div-header, .div-footer {
+	grid-column-start: 2;
+	grid-column-end: 3;
+}
+
+.div-header {
+	background-color: #ffffff;
+}
+
+.menu-item, .menu-item > a {
+	text-decoration: none;
+	text-shadow: 1px 1px #e7038b;
+	color: #e7038b;
+	
+	
+}
+
+.div-footer {
+	/* background: url("../img/little-steps.png"); 
+	background-repeat: repeat-x;  */
+	background-color: #ffffff;
+	padding: 5px;
+	padding-bottom: 15px;
+	height: 35px;
+	/* border: 1px solid red; */
+	border-top: 2px solid red;
+		
+}
+
+.div-header {
+	font-family: 'Pacifico', cursive;
+	height: 100px;
+}
+
+.container-2-3 {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-template-rows: auto auto;
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+
+
+.btn {
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  background: #e7038b;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn-small {
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 16px;
+  background: #e7038b;
+  padding: 5px 10px 5px 10px;
+  text-decoration: none;
+}
+
+.btn:hover, .btn-small:hover {
+  background: #e83c81;
+  text-decoration: none;
+}
+
+.heading24 {
+	font-size: 24px; font-family:'Pacifico', cursive; 
+	color: #e7038b;
+	margin-top:15px;
+}
+
+
+input[type="date"]::-webkit-inner-spin-button {
+	opacity: 0
+}
+    
+input[type="date"]::-webkit-calendar-picker-indicator {
+	background: url(https://cdn3.iconfinder.com/data/icons/linecons-free-vector-icons-pack/32/calendar-16.png) center/80% no-repeat;
+    color: rgba(0, 0, 0, 0);
+    opacity: 0.5
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator:hover {
+   background: url(https://cdn3.iconfinder.com/data/icons/linecons-free-vector-icons-pack/32/calendar-16.png) center/80% no-repeat;
+   opacity: 0.8
+}
+
+.footer-text {
+	font-family: 'Pacifico', cursive;
+}
